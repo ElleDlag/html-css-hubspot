@@ -21,8 +21,8 @@ ul,li{
 }
 
 h1 {
-  font-size:50px;
-  font-weight: 700
+  font-size:40px;
+  font-weight:800;
 }
 h2 {
   font-size:32px;
@@ -47,7 +47,7 @@ p.titleP {
 }
 p.subP {
   font-size:14px;
-  font-weight: 400
+  font-weight: 400;
 }
 p.adsP {
   font-size:19px;
@@ -73,7 +73,7 @@ a {
 }
 
 
-.downArrow{}
+.downArrow{margin-left: 5px}
 .downArrow.miniAw{
   font-size:12px;
   color:white;
@@ -85,9 +85,11 @@ color:white
 .button{
   background:#FF7959;
   border-radius: 5px;
-
 }
-.button a{color:#fff}
+.button.getFree a{
+  color:#fff;
+  font-size: 14px
+}
 /* .checkOrange elemento list (before)
 .btnOrange btn arancione font 16px 600
 */
@@ -112,15 +114,15 @@ header,section,footer{
 /* CONTENT */
 
 /* header */
-
 header{
   border-top:3px solid #ff8f72;
   width:100%;
   position: fixed;
   top:0;
   left:0
-
 }
+
+
 /* firstmenu */
 header .firstMenu{
   height:39px;
@@ -128,7 +130,9 @@ header .firstMenu{
 header .firstMenu .rightMenu .fas:not(.miniAw){
   color:#000;
 }
-header .firstMenu{padding:4px 0}
+header .firstMenu{
+  padding:4px 0
+}
 header .firstMenu,
 header .subHeader{
   width:100%;
@@ -152,9 +156,6 @@ header .firstMenu li{
   height: 39px;
   line-height: 39px;
   padding:0 25px;
-}
-header .firstMenu .leftMenu li .fas{
-  margin-left:5px
 }
 header .firstMenu .rightMenu li .fas{
   font-size:15px
@@ -187,9 +188,6 @@ header .firstMenu .rightMenu .loginDiv #logoUser:after{
 }
 header .firstMenu .rightMenu .loginDiv #nameUser{
   padding-right:150px;
-}
-header .firstMenu .rightMenu .loginDiv #nameUser .fas{
-  margin-left:5px
 }
 /* end FirstMenu */
 
@@ -252,5 +250,109 @@ header .subHeader_right .button{
 header .subHeader_right .button a{
     font-size: 14px;
 }
-
 /* end SuHeader */
+
+
+/* rows*/
+[class^="row_"], footer{
+  padding:0 10.5vw;
+  border:1px solid blue
+}
+[class^="row_"]>*, footer>*{
+  width:100%
+}
+.row_3 .content,
+.row_5 .content,
+.row_6 .content{
+    padding:0 95px;
+}
+.row_1 .content>*,
+.row_2 .content>*,
+.row_5 .content>*,
+.row_6 .content>*{
+  /* border:1px solid orange; */
+  float:left;
+  width:50%
+}
+
+[class^="row_"]>*, footer>*{
+  border:1px solid green
+}
+
+/* row_1 */
+.row_1{
+  margin-top:118px;
+}
+.row_1 .content .mainLogo{
+  width:auto;
+  padding:17px 0;
+}
+.row_1 .content .subMenuList{
+  width:auto;
+  float: right;
+  padding:23px 0;
+}
+.row_1 .content .subMenuList ul{
+    display: block;
+}
+.row_1 .content .subMenuList ul li{
+    padding-left:20px;
+    font-size:16px;
+    font-weight: 300;
+    color:#33475B;
+}
+/* end row_1 */
+
+
+/* row_2 */
+.row_2{
+  background: url("../img/SfondoHub.png") no-repeat;
+  background-size: cover;
+  background-position: right 100%
+}
+.row_2,
+.row_2 .content{
+  height:690px;
+  position: relative;
+}
+.row_2 .content >*{
+  position: absolute;
+  top:40%;
+  left:0;
+  transform: translateY(-50%);
+  width:30%
+}
+.row_2 .content p{
+  padding:30px 0;
+}
+.row_2 .content .button{
+  padding:30px 60px;
+  display: inline-block;
+}
+/* end row_2 */
+
+
+/* row_3 */
+.row_3{
+  background: #f4f8fa;
+}
+.row_3 .content>*{
+  border:1px solid red;
+}
+.row_3 .content .titleOverView{
+  padding:67px 6.9vw;
+  text-align: center;
+}
+.row_3 .content .titleOverView p{
+  font-size: 15.5px;
+  font-weight: 400;
+  padding:33px 0
+}
+
+.row_3 .content .titleOverView img{
+  height:195px;
+}
+.row_3 .content .contentOverView img{
+  height:150px;
+}
+/* end row_3 */
