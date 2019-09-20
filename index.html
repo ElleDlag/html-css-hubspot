@@ -15,6 +15,7 @@
 .downArrow.miniAw freccia submenu piccola e bianca (after)
 .checkOrange elemento list (before)
 .btnOrange btn arancione font 16px 600
+.bckDark
 h1 50px 700w
 h2 32px 700w
 h2.table
@@ -40,14 +41,14 @@ a 16px 500w
 \f099 or <i class="fab fa-twitter"></i> (400 Font Awesome 5 Brands)
 \f0e1 or <i class="fab fa-linkedin-in"></i> (400 Font Awesome 5 Brands)
 -->
-    <header class="header">
-      <div class="firstMenu">
-        <div class="leftMenu">
+    <header class="header clearfix">
+      <div class="firstMenu bckDark clearfix">
+        <div class="leftMenu clearfix">
           <div class="logo">
-            <img src="assets/img/logoOnly" alt="logoOnly">
+            <img src="assets/img/logoOnly.svg" alt="logoOnly">
           </div>
-          <nav>
-            <ul>
+          <nav clearfix>
+            <ul class="floatItem">
               <li>Contact<i class="fas fa-angle-down downArrow miniAw"></i></li>
               <li>Conversation<i class="fas fa-angle-down downArrow miniAw"></i></li>
               <li>Marketing<i class="fas fa-angle-down downArrow miniAw"></i></li>
@@ -55,33 +56,35 @@ a 16px 500w
             </ul>
           </nav>
         </div>
-        <div class="rightMenu">
+        <div class="rightMenu ">
           <div class="searchDiv">
-            <ul>
+            <ul class="floatItem">
               <li><i class="fas fa-search"></i></li>
               <li><i class="fas fa-cog"></i></li>
             </ul>
           </div>
           <div class="loginDiv">
-            <ul>
-              <li><i class="fas fa-user"></i></li>
-              <li>UserName<i class="fas fa-angle-down downArrow miniAw"></li>
+            <ul class="floatItem">
+              <li id="logoUser"><i class="fas fa-user"></i></li>
+              <li id="nameUser">UserName<i class="fas fa-angle-down downArrow miniAw"></i></li>
             </ul>
           </div>
-
         </div>
+
       </div>
-      <div class="subHeader">
+      <div class="subHeader clearfix">
         <div class="subHeader_left">
-          <ul>
+          <ul class="floatItem">
             <li><i class="fas fa-globe-americas"></i>English<i class="fas fa-angle-down downArrow"></i></li>
-            <li>Salese:+3531 512 4400<i class="fas fa-angle-down downArrow"></i></li>
+            <li>Sales: +3531 512 4400<i class="fas fa-angle-down downArrow"></i></li>
           </ul>
         </div>
         <div class="subHeader_right">
-          <form action="">
-            <input type="search">
-            <div class="button">Get Hubspot free</div>
+          <form action="" class="floatItem"> <!-- float? -->
+            <label for="hider"><i class="fas fa-search"></i></label>
+            <input type="checkbox" class="hideSearch" id="hider">
+            <input type="search" placeholder="search" id="searcher">
+            <div class="button"><a href="">Get Hubspot free</a></div>
           </form>
         </div>
       </div>
@@ -94,10 +97,9 @@ a 16px 500w
           <div class="mainLogo">
             <img src="assets/img/HSLogo_color.svg" alt="logo">
           </div>
-          <div class="subMenuList">
-            <ul>
+          <div class="subMenuList clearfix">
+            <ul class="floatItem">
               <li>Software<i class="fas fa-angle-down downArrow"></i></li>
-              <li>Software<i class="fas fa-angle-down "></i></li>
               <li>Pricing</li>
               <li>Resources<i class="fas fa-angle-down downArrow"></i></li>
               <li>Partners<i class="fas fa-angle-down downArrow"></i></li>
@@ -132,10 +134,10 @@ a 16px 500w
               <div class="button">Learn more</div>
             </div>
             <div class="textCrm">
-              <h4>Free HubSpot CRM</h4>
+              <h4>Free HubSpot</h4>
               <p class="subP">Everything you need to organize, track, and build better relationships with leads and customers. Yes, it's 100% free. Forever.</p>
               <p class="titleP">POPULAR FEATURES</p>
-              <ul>
+              <ul FLOAT>
                 <li>Contact Insight</li>
                 <li>Deals</li>
                 <li>Task</li>
@@ -168,10 +170,9 @@ a 16px 500w
       <div class="content">
         <div class="titleTarget">
           <h2>Learn and grow with award-winning support and a thriving community behind you.</h2>
-          <p></p>
+          <p>You don't have to go it alone. Master the inbound methodology and get the most out of your tools with HubSpot's legendary customer support team and a community of thousands of marketing and sales pros just like you.</p>
         </div>
-        <div class="listTarget">
-            <div class="listTr_1">
+        <div class="listTarget floatItem">
               <div class="cellTr">
                 <img src="assets/img/homepage_community_agency.svg" alt="handshake">
                 <h2 class="titleTable">150<span class="titleTableSpan">+</span></h2>
@@ -192,8 +193,6 @@ a 16px 500w
                 <h2 class="titleTable">24K<span class="titleTableSpan">+</span></h2>
                 <p class="subP">registered attendees</p>
               </div>
-            </div>
-            <div class="listTr_2">
               <div class="cellTr">
                 <img src="assets/img/homepage_community_connect.svg" alt="connectIcon">
                 <h2 class="titleTable">200<span class="titleTableSpan">+</span></h2>
@@ -213,7 +212,6 @@ a 16px 500w
                 <img src="assets/img/growthhub-white-small-1.svg" alt="growIcon">
                 <h2 class="titleTable">5K<span class="titleTableSpan">+</span></h2>
                 <p class="subP">profiles and counting</p>
-              </div>
             </div>
         </div>
       </div>
@@ -226,8 +224,7 @@ a 16px 500w
           <h2>52,000</h2>
           <p class=adsP>customers in over 100 countries growing their businesses with HubSpot</p>
         </div>
-        <div class="listAds">
-
+        <div class="listAds floatItem" >
           <img class="adsImg" src="assets/img/Atlassian-horizontal-blue@2x.png" alt="logoAtlassian">
           <img class="adsImg" src="assets/img/doordash_owler_20181011_194113_original@2x.png" alt="logoDoordash">
           <img class="adsImg" src="assets/img/g2crowd-logo@2x.png" alt="logoCrowd">
@@ -261,32 +258,78 @@ a 16px 500w
 
 
 
-    <footer class="footer">
-      <div class="listMap">
-        <div class="listMap1"></div>
-        <div class="listMap2"></div>
-        <div class="listMap3"></div>
-        <div class="listMap4"></div>
+    <footer class="footer bckDark">
+      <div class="listMap clearfix">
+        <div class="listMap1 floatItem">
+          <ul>
+            <li><p class="titleP"></p></li>
+            <li>Ad Software</li>
+            <li>Blog Software</li>
+            <li>SEO Software</li>
+            <li>Social Media Software</li>
+            <li>Content Manager System</li>
+          </ul>
+        </div>
+        <div class="listMap2 floatItem">
+          <ul>
+            <li><p class="titleP"></p></li>
+            <li>Find New Prospects</li>
+            <li>Email Tracking</li>
+            <li>Sales Email Templates</li>
+            <li>Click to Call Your Leads</li>
+            <li>Email Marketing</li>
+          </ul>
+        </div>
+        <div class="listMap3 floatItem">
+          <ul>
+            <li><p class="titleP"></p></li>
+            <li>Document Tracking Tool</li>
+            <li>Meeting Schedule Tool</li>
+            <li>Sales Automation Tool</li>
+            <li>Lead Management Tool</li>
+            <li>Pipeline Management Tool</li>
+          </ul>
+        </div>
+        <div class="listMap4 floatItem">
+          <ul class="floatItem">
+            <li><p class="titleP"></p></li>
+            <li>HubSpot Partners</li>
+            <li>Join a Local User Group</li>
+            <li>Get a Free Website Report</li>
+            <li>HubSpot Templates</li>
+            <li>Free Tools & Generators</li>
+          </ul>
+          <div><a href="#">Contact Hub Support</a></div>
+          <div class="social">
+            <ul>
+              <li class="footerSocial"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="footerSocial"><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li class="footerSocial"><a href="#"><i class="fab fa-youtube"></i></a></li>
+              <li class="footerSocial"><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="footerSocial"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="languages">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+      <div class="languages clearfix">
+        <ul class="floatItem">
+          <li>English</li>
+          <li>Deutsch</li>
+          <li>日本語</li>
+          <li>Español</li>
+          <li>Português</li>
+          <li>Français</li>
         </ul>
       </div>
       <hr>
       <div class="SignAndPolicy">
         <div class="PolicyLeft">
           <img src="assets/img/HSLogo_color.svg" alt="LogoMonocolor">
-          <p></p>
+          <p class="miniP">Copyright © 2019 HubSpot, Inc.</p>
         </div>
         <div class="PolicyRight">
-          <p></p>
-          <p></p>
+          <p>Legal Suff</p>
+          <p>Privacy Policy</p>
         </div>
       </div>
     </footer>
