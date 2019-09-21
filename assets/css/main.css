@@ -279,7 +279,7 @@ header .subHeader_right .button{
 header .subHeader_right .button a{
     font-size: 14px;
 }
-/* end SuHeader */
+/* end SubHeader */
 
 
 /* rows*/
@@ -461,7 +461,7 @@ header .subHeader_right .button a{
 /* end row_3 */
 
 
-/* end row_4 */
+/* row_4 */
 .row_4{
   background: linear-gradient(45deg, #00a9b8 0%,#00bca5 100%);
 }
@@ -499,3 +499,40 @@ header .subHeader_right .button a{
 .row_4 .content>.listTarget h2 span{
     font-weight: 200;
 }
+/* end row_4 */
+
+
+/* row_5 */
+.row_5{
+  padding-top:100px;
+  padding-bottom:100px
+}
+.row_5 .content .titleAds{
+  width:40%;
+}
+.row_5 .content .titleAds{
+  padding:50px 90px 50px 0px;
+}
+.row_5 .content .titleAds p{
+  padding:38px 0;
+}
+.row_5 .content .listAds{
+  width:60%;
+  padding:25px 0;
+}
+.row_5 .content .listAds>*{
+  width:100%;
+}
+.row_5 .content .listAds .adsImg{
+  height:95px;
+  width:25%;
+  position: relative;
+}
+.row_5 .content .listAds>* img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:55%;
+}
+/*  */
