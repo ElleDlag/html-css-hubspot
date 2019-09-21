@@ -30,8 +30,8 @@ h2 {
 }
 h2.table{}
 h4 {
-  font-size:22px;
-  font-weight: 600
+  font-size:12px;
+  font-weight: 700;
 }
 p {
   font-size:16px;
@@ -43,11 +43,15 @@ p.miniP {
 }
 p.titleP {
   font-size:13px;
-  font-weight: 600
+  font-weight: 800;
+  letter-spacing: 1px
 }
 p.subP {
-  font-size:14px;
+  font-size:14.6px;
   font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 20px;
 }
 p.adsP {
   font-size:19px;
@@ -86,13 +90,38 @@ color:white
   background:#FF7959;
   border-radius: 5px;
 }
-.button.getFree a{
+.button a{
   color:#fff;
-  font-size: 14px
 }
-/* .checkOrange elemento list (before)
-.btnOrange btn arancione font 16px 600
-*/
+.button.getFree a{
+  font-size: 14px
+
+}
+.button.learnBtn a{
+  font-size: 12px;
+  font-weight:600
+
+}
+ul.checkList li{
+  position: relative;
+  padding:0 20px;
+  font-size:14px;
+  font-weight: 300
+}
+ul.checkList li:before{
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  position: absolute;
+  top:0;
+  left:0;
+  color:#FF7959
+}
+.shadowBox{
+  box-shadow: 1px 1px 30px 1px rgba(200, 200, 200, 0.2);
+}
+
 
 /* floatation and clearfix*/
 .floatItem,
@@ -335,6 +364,7 @@ header .subHeader_right .button a{
 /* row_3 */
 .row_3{
   background: #f4f8fa;
+  padding-bottom:40px;
 }
 .row_3 .content>*{
   border:1px solid red;
@@ -348,11 +378,87 @@ header .subHeader_right .button a{
   font-weight: 400;
   padding:33px 0
 }
-
 .row_3 .content .titleOverView img{
   height:195px;
 }
-.row_3 .content .contentOverView img{
-  height:150px;
+
+.row_3 .content .rowCrm,
+.row_3 .content .rowServices{
+  width:100%
 }
+.row_3 .content .rowCrm>*,
+.row_3 .content .rowServices>*{
+  float:left
+}
+
+.row_3 .content .rowCrm{
+  background:#fff;
+  border-radius: 8px;
+}
+.row_3 .content .contentOverView .crmImg{
+  width:40%;
+  text-align: center;
+  padding:
+}
+.row_3 .content .contentOverView img{
+  display:block;
+  height:150px;
+  width:100%;
+}
+.row_3 .content .contentOverView .crmImg img{
+  margin-top:40px;
+}
+.row_3 .content .contentOverView .button{
+  display: inline-block;
+  padding:14px 24px;
+  margin-top:8px
+}
+
+.row_3 .content .contentOverView .textCrm{
+  width:60%;
+  padding:40px 0 62px;
+}
+.row_3 .content .contentOverView .textCrm p.subP{
+  padding:25px 0;
+}
+.row_3 .content .contentOverView .textCrm ul{
+  padding:20px 0;
+}
+
+.row_3 .content .rowServices>*{
+  width:30%;
+  margin-top: 13px;
+  background:#fff;
+  border-radius:8px;
+  padding:30px;
+}
+.row_3 .content .rowServices img{
+  margin-top: 15px;
+}
+.row_3 .content .rowServices h4{
+  padding:22px;
+  text-align: center;
+}
+.row_3 .content .rowServices .subP{
+  padding-bottom:17px;
+  border-bottom:2px solid #000;
+}
+.row_3 .content .rowServices .titleP{
+  padding:30px 0;
+}
+.row_3 .content .rowServices li{
+  margin-bottom:35px;
+}
+.row_3 .content .rowServices .listBtn{
+  text-align: center;
+}
+
+.row_3 .content .rowServices .salesSv{
+  width:30%;
+  background:#fff;
+  margin:13px 5% 0;
+}
+
+
+
 /* end row_3 */
