@@ -58,7 +58,7 @@ p.adsP {
 }
 li {
   font-size:13px;
-  font-weight: 500
+  font-weight: 300
 }
 h5 {
   font-size:16px;
@@ -72,7 +72,8 @@ a {
   font-size:16px;
   font-weight: 500;
   text-decoration: none;
-  color:#000
+  color:#000;
+  cursor:pointer;
 }
 
 
@@ -100,6 +101,9 @@ color:white
   font-size: 12px;
   font-weight:600
 
+}
+.centeredBtn{
+  text-align: center;
 }
 ul.checkList li{
   position: relative;
@@ -135,7 +139,6 @@ ul.checkList li:before{
 
 header,section,footer{
   width:100%;
-  /* border:1px solid red; */
 }
 
 
@@ -285,7 +288,6 @@ header .subHeader_right .button a{
 /* rows*/
 [class^="row_"], footer{
   padding:0 10.5vw;
-  border:1px solid blue
 }
 [class^="row_"]>*, footer>*{
   width:100%
@@ -304,9 +306,8 @@ header .subHeader_right .button a{
   width:50%
 }
 
-[class^="row_"]>*, footer>*{
-  border:1px solid green
-}
+
+
 
 /* row_1 */
 .row_1{
@@ -365,9 +366,6 @@ header .subHeader_right .button a{
 .row_3{
   background: #f4f8fa;
   padding-bottom:40px;
-}
-.row_3 .content>*{
-  border:1px solid red;
 }
 .row_3 .content .titleOverView{
   padding:67px 6.9vw;
@@ -448,9 +446,6 @@ header .subHeader_right .button a{
 }
 .row_3 .content .rowServices li{
   margin-bottom:35px;
-}
-.row_3 .content .rowServices .listBtn{
-  text-align: center;
 }
 
 .row_3 .content .rowServices .salesSv{
@@ -535,4 +530,125 @@ header .subHeader_right .button a{
   transform:translate(-50%, -50%);
   width:55%;
 }
-/*  */
+/*end row_5  */
+
+
+/* row_6 */
+.row_6{
+  padding-top:90px;
+  padding-bottom:90px
+}
+.row_6 .content>*{
+  width:50%;
+}
+.row_6 .titleGrow p{
+  padding: 35px 0;
+}
+
+.row_6 .centeredBtn{
+  text-align: left;
+  margin:10px 0px;
+}
+.row_6 .button{
+  display: inline-block;
+  padding:30px 60px;
+}
+.row_6 .titleImgDiv{
+  width:305px;
+  height:305px;
+  border-radius:50%;
+  background-color: #f2547d;
+  background-image: url("../img/Desktop-CTA-Jean@2x.png");
+  background-repeat: no-repeat;
+  background-size:125%;
+  background-position: 20% 0%;
+  margin: auto
+
+}
+/*end row_6 */
+
+
+/* footer */
+footer{
+  padding-top:60px
+}
+footer>*{
+  width:100%
+}
+footer .listMap>*{
+  width:22%;
+}
+footer .listMap>* li:not(:first-child){
+  padding:14px 0;
+  opacity: .5;
+}
+
+footer .listMap>.listMap4{
+  width:34%;
+}
+footer .listMap>.listMap4>*{
+  width:100%;
+}
+
+footer .listMap>.listMap4 .button{
+  display: inline-block;
+  background: #fff;
+  padding:8px 15px;
+}
+footer .listMap>.listMap4 .button a{
+  color:#33475B;
+  font-size: 11px;
+  font-weight: 200;
+}
+
+footer .listMap>.listMap4 .footerSocial{
+  opacity:1;
+  padding:0
+}
+footer .listMap>.listMap4 .footerSocial a{
+    display: block;
+    padding:20px 30px 0px;
+}
+footer .listMap>.listMap4 .footerSocial:first-child a{
+    padding-left:0;
+}
+footer .listMap>.listMap4 .footerSocial .fab{
+  color:#cbd6e2;
+  font-size: 25px;
+}
+footer .languages{
+  text-align:center;
+  padding:40px 18.3vw;
+}
+footer .languages ul{
+  width:100%;
+}
+footer .languages ul li{
+  width:16.666%;
+}
+footer .SignAndPolicy{
+  padding: 8px 0;
+}
+footer .SignAndPolicy .PolicyLeft>*{
+  width:100%;
+  opacity: .8
+}
+footer .SignAndPolicy .PolicyLeft>img{
+  height:35px;
+}
+footer .SignAndPolicy .PolicyRight {
+  float:right;
+  opacity: .8;
+}
+footer .SignAndPolicy .PolicyRight>* {
+  padding:15px 30px;
+  color:#fff;
+  font-size:16px;
+  font-weight: 500;
+}
+
+
+
+
+
+/* end footer */
