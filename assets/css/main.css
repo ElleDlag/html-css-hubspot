@@ -476,16 +476,22 @@ header .subHeader_right .button a{
 
 .row_4 .content>.listTarget>*{
   float:left;
+  width:100%;
+}
+.row_4 .content>.listTarget>*>*{
+  float:left;
   width:25%;
   border-right: 1px solid rgba(255,255,255,0.5);
   border-bottom: 2px solid #fff;
-  padding:30px 100px;
+  padding:32px 5.2vw;
+  /* height:166px */
 }
-.row_4 .content>.listTarget .cellTr.noBtm{
-  border-bottom: 0px;
+.row_4 .content>.listTarget>.TargetBottom>*{
+  border-bottom:none;
 }
-.row_4 .content>.listTarget .cellTr.noRight{
-  border-right: 0px;
+.row_4 .content .TargetBottom>.cellTr:nth-child(4) h2,
+.row_4 .content .TargetBottom>.cellTr:nth-child(4) p{
+  margin-top:5px
 }
 .row_4 .content>.listTarget h2{
     font-size:40px;
